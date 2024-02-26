@@ -1,0 +1,515 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.amiri-quran-regular {
+    font-family: "Amiri Quran", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+  
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar
+{
+    background-color: rgb(0, 128, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.navbar .logo
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.navbar .navbar-nav
+{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .navbar-nav .nav-link
+{
+    color: white;
+    transition: 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover
+{
+    color: lightgreen;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.slider 
+{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: solid lightgreen;
+    border-radius: 10px;
+}
+
+.slide 
+{
+    width: 100%;
+    height: 500px;
+    display: none;
+}
+
+.slide.active 
+{
+    display: block;
+}
+
+.slide img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.santri
+{
+    position: fixed;
+    bottom: 5px;
+    right: -390px;
+    z-index: 2;
+}
+.unit
+{
+    font-weight: bolder;
+    margin: 30Px;
+}
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tk
+{
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: larger;
+    margin-right: 5px;
+}
+.mi
+{
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(0, 173, 0);
+    color: white;
+    border-radius: 5px;
+    font-size: larger;
+    margin-right: 5px;
+}
+.mts
+{
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-size: larger;
+    margin-right: 5px;
+}
+.ma
+{
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(0, 173, 0);
+    color: white;
+    border-radius: 5px;
+    font-size: larger;
+}
+.kop
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.kop img
+{
+    width: 90px;
+    height: 90px;
+}
+.profil
+{
+    color: #008000;
+    margin: 10px;
+}
+.text
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.konten
+{
+    display: flex;
+}
+.kontenbox
+{
+    box-shadow: 2px 2px 5px green;
+    width: 250px;
+    height: 330px;
+    margin: auto;
+    border-radius: 5px;
+    justify-content: center;
+    overflow: auto;
+    background-color: rgb(192, 255, 192);
+    font-size: 20px;
+}
+.kontenbox img
+{
+    width: 100%;
+    height: 150px;
+    display: block;
+    border-radius: 5px;
+}
+.lainya
+{
+    background-color: green;
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px green;
+    margin-top: 10px;
+}
+.lainya:hover
+{
+    opacity: 0.5;
+}
+.lainya a
+{
+    text-decoration: none;
+    color: white;
+}
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 2px 5px green;
+    
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: lightgreen;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+  
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+  
+.text2 {
+    white-space: nowrap; 
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.fitur
+{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.fasilitas
+{
+    width: 300px;
+    overflow: hidden;
+    height: 50px;
+    transition: 2s;
+    background-color: lightgreen;
+    box-shadow: 2px 2px 5px green;
+    margin: auto;
+    text-align: center;
+    border-radius: 30px;
+}
+.fasilitas:hover
+{
+    height: 300px;
+    color: whitesmoke;
+}
+.fasilitas ul li
+{
+    font-size: 25px;
+}
+.syarat
+{
+    display: flex;
+}
+.syarat1
+{
+    margin: auto;
+    height: 69px;
+    width: 360px;
+    overflow: hidden;
+    transition: 3s;
+    background-color: #008040;
+    box-shadow: 2px 2px 5px green;
+    border-radius: 30px;
+
+}
+.syarat1 h2
+{
+    font-size: 50px;
+}
+.syarat1 p
+{
+    font-size: 25px;
+}
+.syarat1:hover
+{
+    height: 277px;
+    width: 400px;
+    color: #fff;
+}
+footer
+{
+    display: flex;
+    background-color: #408000e3;
+    align-items: centers;
+}
+.kiai
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    margin: auto;
+}
+.kiai div
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    height: 330px;
+    transition: 2s;
+    font-size: 17px;
+    margin: auto;
+}
+.kiai div:hover
+{
+    height: 500px;
+    color: white;
+    background-color: green;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px black;
+}
+footer img
+{
+   height: 330px; 
+
+}
+.contac
+{
+    margin: auto;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contac a
+{
+    color: whitesmoke;
+}
+.contac a:hover
+{
+    text-decoration: underline;
+}
+.box3
+{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.box3 a img
+{
+    width: 150px;
+    height: 150px;
+    box-shadow: 2px 2px 5px black;
+    transition: 2s;
+}
+.box3 a img:hover
+{
+    width: 170px;
+    height: 170px;
+}
+.peta
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 210px;
+}
+.peta img
+{
+    width: 270px;
+    height: 200px;
+}
+@media screen and (max-width: 800px)
+{
+    .toggle-menu
+    {
+       display: flex;
+       flex-direction: column;
+       gap: 8px;
+       cursor: pointer;
+       margin-right: -10px; 
+    }
+    .toggle-menu span
+    {
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        width: 35px ;
+    }
+    .navbar
+    {
+        position: sticky;
+        top: 0;
+        padding: 20px;
+    }
+    .navbar .navbar-nav
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -300px;
+        right: 0;
+        background: green;
+        padding: 35px 0;
+    }
+    .navbar .navbar-nav.show
+    {
+        top: 80px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .tk{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .mi{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .mts{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .ma{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+    .konten
+    {
+        display: block;
+        margin: auto;
+    }   
+    .kontenbox
+    {
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .kontenbox img
+    {
+        height: 225px;
+    }
+    .fitur
+    {
+        display: block;
+    }
+    .syarat
+    {
+        display: block;
+    }
+    footer
+    {
+        display: block;
+        align-items: center;
+    }
+}
